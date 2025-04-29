@@ -1,0 +1,5 @@
+<% if (currentUser) { %>
+    <p class="text-end">Welcome, <%= currentUser.name %> | <a href="/logout">Logout</a></p>
+  <% } else { %>
+    <a href="/login">Login</a> | <a href="/register">Register</a>
+  <% } %>
